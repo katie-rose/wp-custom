@@ -5,9 +5,15 @@ $secondary-500: #d0bda5;
 
 body {
 	color: #1a1818;
+	font-family: "Fira Sans";
+}
+
+h1 {
+	font-family: "Fira Sans";
 }
 
 #top-bar {
+	font-family: "Fira Sans";
 	height: 50px;
 	background: $secondary;
 	display: flex;
@@ -20,6 +26,7 @@ body {
 			padding-right: 1em;
 			.fa {
 				margin-right: 0.5em;
+			}
 		}
 	}
 }
