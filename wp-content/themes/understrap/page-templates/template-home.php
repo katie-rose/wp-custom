@@ -11,12 +11,31 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'understrap_container_type' );
-
-if ( is_front_page() ) {
-	get_template_part( 'global-templates/hero' );
-}
 ?>
+
+<section class="home-banner">
+    <div class="logo-title">
+        <div class='logo'>
+            <img src='<?php echo get_template_directory_uri(); ?>/img/logo.png' alt='Testy Theme Logo'>
+        </div>
+        <div class='social-media'>
+            <a herf="#">
+                <i class='fa fa-facebook'></i>
+            </a>
+            <a herf="#">
+                <i class='fa fa-linkedin'></i>
+            </a>
+            <a herf="#">
+                <i class='fa fa-instagram'></i>
+            </a>
+        </div>
+    </div>
+    <h2>
+        A community dedicated to the everyday adventurer, photo taker and story maker. Photo printing, photo
+        scanning and beyond.
+    </h2>
+    <h3>No story untold</h3>
+</section>
 
 
 <?php
