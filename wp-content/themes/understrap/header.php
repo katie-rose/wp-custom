@@ -20,6 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -32,22 +34,28 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div id="top-bar">
             <div class="contact-info">
                 <div class="contact-item phone">
-                    <div class="phone">
-                        <i class="fa fa-phone">
-                            420-614-8004
-                        </i>
-                    </div>
+                    <i class="fa fa-phone"></i>
+                    420-614-8004
                 </div>
                 <div class="contact-item email">
-                    <div class="email">
-                        <i class="fa fa-phone">
-                            hello@mailman.com
-                        </i>
-                    </div>
+                    <i class="fa fa-envelope-o"> </i>
+                    hello@mailman.com
                 </div>
-                <div class="search"></div>
+                <div class="contact-item search">
+                    <i class="fa fa-search"> </i>
+                    <input type='text' placeholder='Search' />
+                </div>
+            </div>
+            <div class="shipping-info">
+                <i class="fa fa-truck"> </i>
+                Free shipping on orders over $100
+            </div>
+            <div class='login-register'>
+                Login / Register
+                <i class="fa fa-user-circle"> </i>
             </div>
         </div>
+
         <div id="wrapper-navbar">
 
             <nav id="main-nav" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">

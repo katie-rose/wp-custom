@@ -5,20 +5,20 @@ $secondary-500: #d0bda5;
 
 body {
 	color: #1a1818;
-	font-family: "Fira Sans";
+	font-family: "Fira Sans", sans-serif;
 }
 
 h1 {
-	font-family: "Fira Sans";
+	font-family: "Crimson Text", serif;
 }
 
 #top-bar {
-	font-family: "Fira Sans";
 	height: 50px;
 	background: $secondary;
 	display: flex;
 	.contact-info {
 		display: flex;
+		flex: 1;
 		.contact-item {
 			display: flex;
 			align-items: center;
@@ -28,5 +28,30 @@ h1 {
 				margin-right: 0.5em;
 			}
 		}
+		input {
+			border: none;
+			background-color: transparent;
+			outline: none;
+			padding: 0.25em 0.5em;
+		}
+	}
+	.shipping-info {
+		display: flex;
+		flex: 1;
+			align-items: center;
+			padding-left: 1em;
+			padding-right: 1em;
+			.fa {
+				margin-right: 0.5em;
+			}
+	}
+	.login-register {
+		display: flex;
+			align-items: center;
+			padding-left: 1em;
+			padding-right: 1em;
+			.fa {
+				margin-left: 0.5em;
+			}
 	}
 }
