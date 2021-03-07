@@ -98,3 +98,22 @@ $container = get_theme_mod( 'understrap_container_type' );
             </nav><!-- .site-navigation -->
 
         </div><!-- #wrapper-navbar end -->
+
+        <div class="top-logo-holder">
+            <div class="logo-title">
+                <div class='logo'>
+                    <img src='<?php echo get_template_directory_uri(); ?>/img/logo.png' alt='Testy Theme Logo'>
+                </div>
+                <div class='social-media'>
+                    <a herf="#">
+                        <i class='fa fa-facebook'></i>
+                    </a>
+                    <a herf="#">
+                        <i class='fa fa-linkedin'></i>
+                    </a>
+                    <a herf="#">
+                        <i class='fa fa-instagram'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
