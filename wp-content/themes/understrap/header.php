@@ -32,6 +32,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         <!-- ******************* The Navbar Area ******************* -->
 
         <div id="top-bar">
+            <div class='login-register-mobile'>
+                <i class="fa fa-user-circle"> </i>
+                Login
+            </div>
             <div class="contact-info">
                 <div class="contact-item phone">
                     <i class="fa fa-phone"></i>
@@ -53,6 +57,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class='login-register'>
                 Login / Register
                 <i class="fa fa-user-circle"> </i>
+            </div>
+            <div class='mobile-menu'>
+                Menu
+                <i class="fa fa-bars"> </i>
             </div>
         </div>
 

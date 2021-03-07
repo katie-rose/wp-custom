@@ -3,6 +3,10 @@
 $secondary: #f3f0ec;
 $secondary-500: #d0bda5;
 
+$xl: 1500px;
+$lg: 1200px;
+$md: 992px;
+
 body {
 	color: #1a1818;
 	font-family: "Fira Sans", sans-serif;
@@ -19,6 +23,12 @@ h1 {
 	.contact-info {
 		display: flex;
 		flex: 1;
+		@media (max-width: $xl) {
+			flex: intitial;
+		}
+		@media (max-width: $md) {
+			flex: 1;
+		}
 		.contact-item {
 			display: flex;
 			align-items: center;
@@ -26,6 +36,11 @@ h1 {
 			padding-right: 1em;
 			.fa {
 				margin-right: 0.5em;
+			}
+			&.phone, &.email {
+				@media (max-width: $md) {
+					display: none;
+				}
 			}
 		}
 		input {
@@ -38,20 +53,65 @@ h1 {
 	.shipping-info {
 		display: flex;
 		flex: 1;
-			align-items: center;
-			padding-left: 1em;
-			padding-right: 1em;
-			.fa {
-				margin-right: 0.5em;
-			}
+		align-items: center;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-transform: uppercase;
+		@media (max-width: $xl) {
+			flex: intitial;
+		}
+		@media (max-width: $lg) {
+			display: none;
+		}
+		@media (max-width: $md) {
+			display: none;
+		}
+		.fa {
+			margin-right: 0.5em;
+		}
+	}
+	.mobile-menu {
+		display: flex;
+		align-items: center;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-transform: uppercase;
+		display: none;
+		justify-content: flex-end;
+		flex: 1;
+		.fa {
+			margin-left: 0.5em;
+		}
+		@media (max-width: $md) {
+			display: flex;
+		}
 	}
 	.login-register {
 		display: flex;
-			align-items: center;
-			padding-left: 1em;
-			padding-right: 1em;
-			.fa {
-				margin-left: 0.5em;
-			}
+		align-items: center;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-transform: uppercase;
+		@media (max-width: $xl) {
+			flex:1;
+			text-align: right;
+			justify-content: flex-end;
+		}
+		.fa {
+			margin-left: 0.5em;
+		}
+	}
+	.login-register-mobile {
+		display: none;
+		align-items: center;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-transform: uppercase;
+		@media (max-width: $md) {
+			display: flex;
+		}
+		.fa {
+			margin-right: 0.5em;
+		}
 	}
 }
