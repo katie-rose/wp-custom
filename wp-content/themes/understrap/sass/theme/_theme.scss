@@ -121,7 +121,7 @@ h1 {
 	padding-top: 100px;
 	max-width: 1220px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 140px;
 	.logo-title {
 		display: flex;
 		font-size: 24px;
@@ -146,9 +146,9 @@ h1 {
 .home-banner {
 	max-width: 1220px;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 140px;
 	h2 {
-		margin-top: 160px;
+		margin-top: 100px;
 		font-size: 30px;
 		font-weight: 200;
 		color: #000;
@@ -157,7 +157,43 @@ h1 {
 	h3 {
 		font-size: 90px;
 		font-style: italic;
-		margin-top: 120px;
+		margin-top: 100px;
+		margin-bottom: 50px;
 		font-family: "Crimson Text", serif;
 	}
+}
+
+.home-call-to-action {
+	max-width: 1220px;
+	margin-right: auto;
+	margin-left: 140px;
+	margin-bottom: -200px;
+	.action {
+		background: $secondary;
+		display: block;
+		text-decoration: none;
+		.title {
+			padding: 10px 15px;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: black;
+		}
+		.img {
+			height: 400px;
+			background-color: #ccc;
+			background-image: url(../img/photo-1.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		transition: 0.25s all ease;
+		&:hover {
+			background: $secondary-500;
+		}
+	}
+}
+
+.home-about {
+	height: 900px;
+	background-color: $secondary;
 }
